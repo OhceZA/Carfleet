@@ -19,6 +19,16 @@ public class Person {
         _languages = languages;
     }
 
+    public void setLanguages(ArrayList<String> languages) {
+        for (String language : languages) {
+            if (!_languages.contains(language)) {
+                _languages.add(language);
+            }
+        }
+    }
+
+
+
     public String getName(){
         return _name;
     }
@@ -39,4 +49,13 @@ public class Person {
         return _languages;
     }
     //endregion public methods
+
+    public void addLanguages(ArrayList<String> newLanguages) {
+        for (String language : newLanguages) {
+            if (!_languages.contains(language)) { // Évite les doublons
+                _languages.add(language);
+            }
+        }
+    }
+
 }
