@@ -1,7 +1,8 @@
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
+import java.util.List;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -34,6 +35,8 @@ public class PersonTest {
         assertEquals(_name, _person.getName());
     }
 
+
+
     /* Test written in CSharp
     [Test]
         public void AllProperties_AfterInstantiation_GetCorrectValues()
@@ -64,6 +67,8 @@ public class PersonTest {
         //then
         Assert.AreEqual(expectedLanguage, _person.Languages[0]);
     }
+
+
 
         [Test]
     public void Languages_AddMultipleLanguagesAtOnce_GetCorrectListOfLanguages()
